@@ -1,0 +1,135 @@
+"" 
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧪</text></svg>">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Cases - QA Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+    <div class="logo">PRANAV TAMORE</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="methodology.html">Methodology</a></li>
+        <li><a href="test-cases.html">Test Cases</a></li>
+        <li><a href="bug-reports.html">Bug Reports</a></li>
+        <li><a href="checklists.html">Checklists</a></li>
+        <li><a href="analytics.html">Analytics</a></li> <!-- ADDED -->
+        <li><a href="https://github.com/Mugiwara25" target="_blank">GitHub</a></li>
+    </ul>
+        </nav>
+        <meta name="description" content="Pranav Tamore's QA Engineering portfolio showcasing manual testing documentation, test cases, bug reports, and testing methodologies.">
+<meta name="keywords" content="QA Engineer, Software Testing, Manual Testing, Test Cases, Bug Reports, Quality Assurance, Pranav Tamore">
+<meta name="author" content="Pranav Tamore">
+<meta property="og:title" content="Pranav Tamore - QA Engineer Portfolio">
+<meta property="og:description" content="Professional QA Engineering portfolio showcasing testing expertise">
+<meta property="og:type" content="website">
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>TEST CASE DOCUMENTATION</h1>
+            <p>Sample test cases for web application testing</p>
+        </section>
+
+        <section class="test-cases">
+            <h2>Login Page Test Cases</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Test Case ID</th>
+                        <th>Description</th>
+                        <th>Steps</th>
+                        <th>Expected Result</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>TC-LOGIN-001</td>
+                        <td>Valid login with correct credentials</td>
+                        <td>1. Enter valid username<br>2. Enter valid password<br>3. Click Login</td>
+                        <td>User is redirected to dashboard</td>
+                        <td class="passed">Pass</td>
+                    </tr>
+                    <tr>
+                        <td>TC-LOGIN-002</td>
+                        <td>Invalid login with wrong password</td>
+                        <td>1. Enter valid username<br>2. Enter invalid password<br>3. Click Login</td>
+                        <td>Error message appears: "Invalid credentials"</td>
+                        <td class="passed">Pass</td>
+                    </tr>
+                    <tr>
+                        <td>TC-LOGIN-003</td>
+                        <td>Login with empty username field</td>
+                        <td>1. Leave username empty<br>2. Enter valid password<br>3. Click Login</td>
+                        <td>Field validation error: "Username required"</td>
+                        <td class="passed">Pass</td>
+                    </tr>
+                    <tr>
+                        <td>TC-LOGIN-004</td>
+                        <td>Login with empty password field</td>
+                        <td>1. Enter valid username<br>2. Leave password empty<br>3. Click Login</td>
+                        <td>Field validation error: "Password required"</td>
+                        <td class="passed">Pass</td>
+                    </tr>
+                    <tr>
+                        <td>TC-LOGIN-005</td>
+                        <td>Password field masking</td>
+                        <td>1. Type in password field</td>
+                        <td>Password characters are masked (shown as •••)</td>
+                        <td class="passed">Pass</td>
+                    </tr>
+                    <tr>
+                        <td>TC-LOGIN-006</td>
+                        <td>Remember Me functionality</td>
+                        <td>1. Enter credentials<br>2. Check Remember Me<br>3. Login and logout<br>4. Revisit login page</td>
+                        <td>Username is prefilled on return</td>
+                        <td class="failed">Fail</td>
+                    </tr>
+                    <tr>
+                        <td>TC-LOGIN-007</td>
+                        <td>Login with SQL injection attempt</td>
+                        <td>1. Enter: admin' OR '1'='1<br>2. Any password<br>3. Click Login</td>
+                        <td>Login fails with security error message</td>
+                        <td class="passed">Pass</td>
+                    </tr>
+                    <tr>
+                        <td>TC-LOGIN-008</td>
+                        <td>Maximum login attempts</td>
+                        <td>1. Enter wrong credentials 5 times consecutively</td>
+                        <td>Account is locked after 5 attempts</td>
+                        <td class="pending">Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Test Case Template Used:</h3>
+            <div class="template">
+                <p><strong>Test Case ID:</strong> Unique identifier</p>
+                <p><strong>Test Scenario:</strong> What feature is being tested</p>
+                <p><strong>Test Steps:</strong> Detailed steps to execute</p>
+                <p><strong>Test Data:</strong> Input values used</p>
+                <p><strong>Expected Result:</strong> What should happen</p>
+                <p><strong>Actual Result:</strong> What actually happened</p>
+                <p><strong>Status:</strong> Pass/Fail/Blocked</p>
+                <p><strong>Comments:</strong> Additional notes</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    <p>Created by Pranav Tamore | QA Portfolio Project</p>
+    <p>Email: pranavtamore25@gmail.com | 
+        <a href="https://linkedin.com/in/pranav-tamore-84a96b21b" target="_blank">LinkedIn</a> | 
+        <a href="https://github.com/Mugiwara25" target="_blank">GitHub</a>
+    </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

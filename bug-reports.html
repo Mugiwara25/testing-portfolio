@@ -1,0 +1,160 @@
+"" 
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧪</text></svg>">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Reports - QA Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Pranav Tamore's QA Engineering portfolio showcasing manual testing documentation, test cases, bug reports, and testing methodologies.">
+<meta name="keywords" content="QA Engineer, Software Testing, Manual Testing, Test Cases, Bug Reports, Quality Assurance, Pranav Tamore">
+<meta name="author" content="Pranav Tamore">
+<meta property="og:title" content="Pranav Tamore - QA Engineer Portfolio">
+<meta property="og:description" content="Professional QA Engineering portfolio showcasing testing expertise">
+<meta property="og:type" content="website">
+</head>
+<body>
+    <header>
+       <nav>
+    <div class="logo">PRANAV TAMORE</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="methodology.html">Methodology</a></li>
+        <li><a href="test-cases.html">Test Cases</a></li>
+        <li><a href="bug-reports.html">Bug Reports</a></li>
+        <li><a href="checklists.html">Checklists</a></li>
+        <li><a href="analytics.html">Analytics</a></li> <!-- ADDED -->
+        <li><a href="https://github.com/Mugiwara25" target="_blank">GitHub</a></li>
+    </ul>
+       </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>BUG REPORT DOCUMENTATION</h1>
+            <p>Sample bug reports following industry standards</p>
+        </section>
+
+        <section class="bug-reports">
+            <h2>Sample Bug Reports</h2>
+
+            <div class="bug-card">
+                <h3>Bug Report #1: Login Page - Security Issue</h3>
+                <div class="bug-details">
+                    <p><strong>Bug ID:</strong> BUG-LOGIN-001</p>
+                    <p><strong>Title:</strong> Password visible in page source</p>
+                    <p><strong>Severity:</strong> High</p>
+                    <p><strong>Priority:</strong> High</p>
+                    <p><strong>Environment:</strong> Chrome 120, Windows 11</p>
+                    <p><strong>Steps to Reproduce:</strong></p>
+                    <ol>
+                        <li>Navigate to login page</li>
+                        <li>Enter any username and password</li>
+                        <li>Right-click → View Page Source</li>
+                        <li>Search for "password" in source code</li>
+                    </ol>
+                    <p><strong>Expected Result:</strong> Password should not be visible in page source</p>
+                    <p><strong>Actual Result:</strong> Password appears in plain text in HTML source</p>
+                    <p><strong>Attachment:</strong> <a href="#">screenshot_source_code.png</a></p>
+                </div>
+            </div>
+
+            <div class="bug-card">
+                <h3>Bug Report #2: Search Functionality - Data Issue</h3>
+                <div class="bug-details">
+                    <p><strong>Bug ID:</strong> BUG-SEARCH-001</p>
+                    <p><strong>Title:</strong> Search returns incorrect results for special characters</p>
+                    <p><strong>Severity:</strong> Medium</p>
+                    <p><strong>Priority:</strong> Medium</p>
+                    <p><strong>Environment:</strong> Firefox 119, macOS</p>
+                    <p><strong>Steps to Reproduce:</strong></p>
+                    <ol>
+                        <li>Go to product search page</li>
+                        <li>Enter search term: "C++ programming"</li>
+                        <li>Click search button</li>
+                    </ol>
+                    <p><strong>Expected Result:</strong> Returns relevant C++ programming books</p>
+                    <p><strong>Actual Result:</strong> Returns all products (ignores special characters)</p>
+                    <p><strong>Attachment:</strong> <a href="#">search_results_screenshot.png</a></p>
+                </div>
+            </div>
+
+            <div class="bug-card">
+                <h3>Bug Report #3: UI Responsiveness Issue</h3>
+                <div class="bug-details">
+                    <p><strong>Bug ID:</strong> BUG-UI-001</p>
+                    <p><strong>Title:</strong> Navigation menu overlaps content on mobile view</p>
+                    <p><strong>Severity:</strong> Low</p>
+                    <p><strong>Priority:</strong> Low</p>
+                    <p><strong>Environment:</strong> Safari, iPhone 12</p>
+                    <p><strong>Steps to Reproduce:</strong></p>
+                    <ol>
+                        <li>Open website on mobile device</li>
+                        <li>Click on menu button</li>
+                        <li>Scroll down the page</li>
+                    </ol>
+                    <p><strong>Expected Result:</strong> Menu should collapse properly</p>
+                    <p><strong>Actual Result:</strong> Menu stays open and overlaps page content</p>
+                    <p><strong>Attachment:</strong> <a href="#">mobile_screenshot.png</a></p>
+                </div>
+            </div>
+
+            <div class="bug-template">
+                <h3>Bug Report Template</h3>
+                <table>
+                    <tr>
+                        <th>Field</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Bug ID</td>
+                        <td>Unique identifier for tracking</td>
+                    </tr>
+                    <tr>
+                        <td>Title</td>
+                        <td>Concise, descriptive title</td>
+                    </tr>
+                    <tr>
+                        <td>Severity</td>
+                        <td>Impact on system (Critical/High/Medium/Low)</td>
+                    </tr>
+                    <tr>
+                        <td>Priority</td>
+                        <td>Urgency for fixing (P1/P2/P3/P4)</td>
+                    </tr>
+                    <tr>
+                        <td>Environment</td>
+                        <td>OS, Browser, Device details</td>
+                    </tr>
+                    <tr>
+                        <td>Steps to Reproduce</td>
+                        <td>Detailed, numbered steps</td>
+                    </tr>
+                    <tr>
+                        <td>Expected Result</td>
+                        <td>What should happen</td>
+                    </tr>
+                    <tr>
+                        <td>Actual Result</td>
+                        <td>What actually happens</td>
+                    </tr>
+                    <tr>
+                        <td>Attachments</td>
+                        <td>Screenshots, videos, logs</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    <p>Created by Pranav Tamore | QA Portfolio Project</p>
+    <p>Email: pranavtamore25@gmail.com | 
+        <a href="https://linkedin.com/in/pranav-tamore-84a96b21b" target="_blank">LinkedIn</a> | 
+        <a href="https://github.com/Mugiwara25" target="_blank">GitHub</a>
+    </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

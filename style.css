@@ -1,0 +1,469 @@
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f7fa;
+}
+
+/* Navigation */
+header {
+    background: linear-gradient(135deg, #1a2980, #26d0ce);
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffdd40;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Main content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Sections */
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    color: #1a2980;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #26d0ce;
+}
+
+h3 {
+    color: #2c3e50;
+    margin: 1rem 0;
+}
+
+/* Feature cards */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Skills list */
+.skills ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.skills li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.skills li:last-child {
+    border-bottom: none;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: #1a2980;
+    color: white;
+    font-weight: 600;
+}
+
+tr:hover {
+    background: #f5f7fa;
+}
+
+.passed {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.failed {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.pending {
+    color: #f39c12;
+    font-weight: bold;
+}
+
+/* Bug reports */
+.bug-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    border-left: 5px solid #e74c3c;
+}
+
+.bug-details {
+    margin-top: 1rem;
+}
+
+.bug-details p {
+    margin: 0.5rem 0;
+}
+
+.bug-details ol {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+}
+
+/* Checklists */
+.checklist-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.checklist {
+    margin: 1.5rem 0;
+}
+
+.checklist ul {
+    list-style: none;
+}
+
+.checklist li {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.checklist input[type="checkbox"] {
+    margin-right: 1rem;
+    transform: scale(1.2);
+}
+
+/* Templates */
+.template {
+    background: #e8f4fc;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    border-left: 5px solid #3498db;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #2c3e50;
+    color: white;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0.5rem 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+/* ========== LEVEL 1 IMPROVEMENTS ========== */
+
+/* External links styling */
+a[target="_blank"] {
+    color: #26d0ce;
+    text-decoration: underline;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+}
+
+/* ========== LEVEL 2 IMPROVEMENTS ========== */
+
+/* Better color scheme - replace existing header */
+header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Hover effects */
+.feature-card, .bug-card, .checklist-section {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.feature-card:hover, .bug-card:hover, .checklist-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: #2a5298;
+}
+
+/* Professional typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f7fa;
+}
+/* ========== METHODOLOGY PAGE STYLES ========== */
+
+.methodology {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.method-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-left: 4px solid #2a5298;
+    transition: all 0.3s ease;
+}
+
+.method-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.method-card h3 {
+    color: #2a5298;
+    margin-bottom: 0.5rem;
+}
+/* ========== JAVASCRIPT ENHANCEMENTS ========== */
+
+/* Toggle button for checklists */
+.toggle-btn {
+    margin-left: 15px;
+    padding: 4px 10px;
+    background: #2a5298;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background 0.3s;
+}
+
+.toggle-btn:hover {
+    background: #1e3c72;
+}
+
+/* Stats section */
+.stats {
+    background: #e8f4fc;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center;
+    border-left: 4px solid #2a5298;
+}
+
+/* Print button */
+.print-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.print-btn:hover {
+    background: #219653;
+}
+
+/* Print styles */
+@media print {
+    header, footer, .print-btn, .toggle-btn {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        background: white;
+    }
+    
+    table {
+        page-break-inside: auto;
+    }
+    
+    tr {
+        page-break-inside: avoid;
+        page-break-after: auto;
+    }
+}
+/* ========== BADGES ========== */
+.badges {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.badges img {
+    margin: 0 5px;
+    height: 28px;
+}
+
+/* ========== ANALYTICS PAGE ========== */
+.analytics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.metric-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.metric-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2a5298;
+    margin: 1rem 0;
+}
+
+.metric-card p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
