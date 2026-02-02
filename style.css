@@ -467,3 +467,250 @@ body {
     font-size: 0.9rem;
     margin-top: 10px;
 }
+
+/* ========== API TESTING PAGE ========== */
+
+.project-overview {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    background: #FF6C37;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+    border: 2px solid #FF6C37;
+}
+
+.btn:hover {
+    background: #e55a2b;
+    border-color: #e55a2b;
+    transform: translateY(-2px);
+}
+
+.api-tests {
+    margin: 3rem 0;
+}
+
+.test-category {
+    margin-bottom: 3rem;
+}
+
+.test-category h3 {
+    color: #2a5298;
+    border-bottom: 2px solid #FF6C37;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.test-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    margin: 1rem 0;
+    border-left: 4px solid #FF6C37;
+    transition: transform 0.3s;
+}
+
+.test-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.test-card h4 {
+    color: #FF6C37;
+    margin-bottom: 1rem;
+}
+
+.test-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.test-card li {
+    padding: 0.3rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.test-card li:before {
+    content: "✓";
+    color: #27ae60;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+pre {
+    background: #2d2d2d;
+    color: #f8f8f2;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin: 1rem 0;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    border-left: 4px solid #FF6C37;
+}
+
+code {
+    font-family: 'Courier New', monospace;
+}
+
+.technical-details {
+    background: #f0f7ff;
+    padding: 3rem;
+    border-radius: 10px;
+    margin: 3rem 0;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.detail-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.detail-card:hover {
+    transform: translateY(-5px);
+}
+
+.detail-card h3 {
+    color: #FF6C37;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+}
+
+.detail-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.detail-card li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.detail-card li:last-child {
+    border-bottom: none;
+}
+
+.test-results {
+    text-align: center;
+    margin: 3rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    color: white;
+}
+
+.metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.metric {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.metric-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.metric-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.implementation-notes {
+    margin: 3rem 0;
+}
+
+.notes-card {
+    background: #e8f5e9;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 5px solid #4CAF50;
+}
+
+.notes-card h3 {
+    color: #2a5298;
+    margin-bottom: 1rem;
+}
+
+.notes-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.notes-card li {
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.notes-card li:before {
+    content: "•";
+    color: #4CAF50;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .metrics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .test-card, .detail-card {
+        padding: 1rem;
+    }
+}

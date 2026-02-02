@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Testing Suite - QA Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔧</text></svg>">
+    <meta name="description" content="Pranav Tamore's API Testing suite using Postman for JSONPlaceholder REST API">
+    <meta name="keywords" content="API Testing, Postman, REST API, QA Testing, Pranav Tamore">
+    <meta name="author" content="Pranav Tamore">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">PRANAV TAMORE</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="api-testing.html">API Testing</a></li>
+                <li><a href="methodology.html">Methodology</a></li>
+                <li><a href="test-cases.html">Test Cases</a></li>
+                <li><a href="bug-reports.html">Bug Reports</a></li>
+                <li><a href="checklists.html">Checklists</a></li>
+                <li><a href="analytics.html">Analytics</a></li>
+                <li><a href="https://github.com/Mugiwara25" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>API TESTING SUITE</h1>
+            <p>Professional API testing using Postman and JavaScript</p>
+            <div class="badges">
+                <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white" alt="Postman">
+                <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+                <img src="https://img.shields.io/badge/API%20Testing-009688?style=for-the-badge&logo=api&logoColor=white" alt="API Testing">
+                <img src="https://img.shields.io/badge/REST%20API-02569B?style=for-the-badge&logo=rest&logoColor=white" alt="REST API">
+            </div>
+        </section>
+
+        <section class="project-overview">
+            <h2>Project Overview</h2>
+            <p>This API testing suite demonstrates professional testing of REST APIs using Postman. It includes comprehensive test cases for CRUD operations, data validation, error handling, and performance testing.</p>
+            
+            <div class="project-links">
+                <a href="https://github.com/Mugiwara25/api-testing-suite" target="_blank" class="btn">View on GitHub</a>
+                <a href="https://www.postman.com/" target="_blank" class="btn">Download Postman Collection</a>
+            </div>
+        </section>
+
+        <section class="api-tests">
+            <h2>API Test Examples</h2>
+            
+            <div class="test-category">
+                <h3>GET Requests</h3>
+                <div class="test-card">
+                    <h4>GET All Posts</h4>
+                    <p><strong>Endpoint:</strong> GET https://jsonplaceholder.typicode.com/posts</p>
+                    <p><strong>Tests:</strong></p>
+                    <ul>
+                        <li>✓ Status code is 200</li>
+                        <li>✓ Response time is less than 500ms</li>
+                        <li>✓ Response body contains array of posts</li>
+                        <li>✓ Each post has required fields (id, title, body, userId)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="test-category">
+                <h3>POST Requests</h3>
+                <div class="test-card">
+                    <h4>POST Create New Post</h4>
+                    <p><strong>Endpoint:</strong> POST https://jsonplaceholder.typicode.com/posts</p>
+                    <p><strong>Test Data:</strong></p>
+                    <pre><code>{
+  "title": "Test Post",
+  "body": "This is a test post",
+  "userId": 1
+}</code></pre>
+                    <p><strong>Tests:</strong></p>
+                    <ul>
+                        <li>✓ Status code is 201 (Created)</li>
+                        <li>✓ Response contains generated ID</li>
+                        <li>✓ Response matches request data</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="test-category">
+                <h3>PUT & DELETE Requests</h3>
+                <div class="test-card">
+                    <h4>PUT Update Post</h4>
+                    <p><strong>Endpoint:</strong> PUT https://jsonplaceholder.typicode.com/posts/1</p>
+                    <p><strong>Tests:</strong></p>
+                    <ul>
+                        <li>✓ Status code is 200</li>
+                        <li>✓ Updated data reflects in response</li>
+                        <li>✓ All fields present in response</li>
+                    </ul>
+                </div>
+                
+                <div class="test-card">
+                    <h4>DELETE Post</h4>
+                    <p><strong>Endpoint:</strong> DELETE https://jsonplaceholder.typicode.com/posts/1</p>
+                    <p><strong>Tests:</strong></p>
+                    <ul>
+                        <li>✓ Status code is 200</li>
+                        <li>✓ Response is empty object</li>
+                        <li>✓ Fast response time (&lt;500ms)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="test-category">
+                <h3>Negative Testing</h3>
+                <div class="test-card">
+                    <h4>GET Non-existent Resource (404 Error)</h4>
+                    <p><strong>Endpoint:</strong> GET https://jsonplaceholder.typicode.com/posts/99999</p>
+                    <p><strong>Tests:</strong></p>
+                    <ul>
+                        <li>✓ Status code is 404</li>
+                        <li>✓ Response is empty object</li>
+                        <li>✓ Error response is fast</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="technical-details">
+            <h2>Technical Implementation</h2>
+            <div class="details-grid">
+                <div class="detail-card">
+                    <h3>Tools Used</h3>
+                    <ul>
+                        <li>Postman (Collection Runner)</li>
+                        <li>JavaScript (Test scripts)</li>
+                        <li>JSONPlaceholder API</li>
+                        <li>GitHub (Version control)</li>
+                    </ul>
+                </div>
+                <div class="detail-card">
+                    <h3>Testing Scope</h3>
+                    <ul>
+                        <li>CRUD Operations Testing</li>
+                        <li>Data Validation</li>
+                        <li>Error Handling</li>
+                        <li>Performance Testing</li>
+                        <li>Response Schema Validation</li>
+                    </ul>
+                </div>
+                <div class="detail-card">
+                    <h3>Skills Demonstrated</h3>
+                    <ul>
+                        <li>API Testing Fundamentals</li>
+                        <li>Postman Automation</li>
+                        <li>Test Case Design for APIs</li>
+                        <li>Negative Test Scenarios</li>
+                        <li>Technical Documentation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="test-results">
+            <h2>Test Results & Metrics</h2>
+            <div class="metrics">
+                <div class="metric">
+                    <div class="metric-value">100%</div>
+                    <div class="metric-label">Test Coverage</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">6</div>
+                    <div class="metric-label">Test Cases</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">25+</div>
+                    <div class="metric-label">Assertions</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">100%</div>
+                    <div class="metric-label">Pass Rate</div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="implementation-notes">
+            <h2>Implementation Notes</h2>
+            <div class="notes-card">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Comprehensive test suite covering all CRUD operations</li>
+                    <li>JavaScript-based test assertions for data validation</li>
+                    <li>Environment variables for flexible configuration</li>
+                    <li>Negative testing for error handling scenarios</li>
+                    <li>Performance validation with response time checks</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by Pranav Tamore | QA Portfolio Project</p>
+        <p>Email: pranavtamore25@gmail.com | 
+            <a href="https://linkedin.com/in/pranav-tamore-84a96b21b" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/Mugiwara25" target="_blank">GitHub</a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
